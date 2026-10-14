@@ -253,10 +253,13 @@
 
                   <!-- 3D Mascot Image with Parallax & Hover Physics -->
                   <div class="mascot-layer-mascot relative z-20 flex justify-center items-center">
-                    <img id="mascot-interactive-img" 
-                         src="images/mascot.png" 
-                         alt="Farhana Farid 3D AI Mascot" 
-                         class="mascot-idle max-h-72 w-auto object-contain drop-shadow-[0_20px_20px_rgba(59,130,246,0.3)] hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer">
+                    <!-- Idle float wrapper keeps animating even when JS applies parallax to the img -->
+                    <div class="mascot-idle">
+                      <img id="mascot-interactive-img"
+                           src="images/mascot.png"
+                           alt="Farhana Farid 3D AI Mascot"
+                           class="max-h-72 w-auto object-contain drop-shadow-[0_20px_20px_rgba(59,130,246,0.3)] hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer">
+                    </div>
                   </div>
                   
                   <!-- Floating 3D Badge 1 (Top Right) -->
