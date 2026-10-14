@@ -460,7 +460,8 @@ function initInteractive3DMascot() {
   const handleMouseLeave = () => {
     card.classList.add('spring-back');
     card.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    mascotImg.style.transform = 'translateZ(55px) translateX(0px) translateY(0px)';
+    // Clear inline transform so the CSS idle float animation (mascot-idle) can resume
+    mascotImg.style.transform = '';
     if (glare) glare.style.opacity = '0';
   };
 
