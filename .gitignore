@@ -1,0 +1,18 @@
+# junk / local files
+*.zip
+*.lnk
+HOW_TO_UPLOAD_TO_TIINY_HOST.txt
+__pycache__/
+*.pyc
+
+# contact form data (privacy)
+data/messages.json
+images/data/messages.json
+
+# python
+.env
+venv/
+
+# editors
+.DS_Store
+Thumbs.db
